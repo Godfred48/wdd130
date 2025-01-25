@@ -1,0 +1,46 @@
+:root {
+    --heading-color: #0077B6;
+    --heading-font: 'Teko', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --paragraph-color:#CAF0F8;
+    --header-backgorund:#0077B6;
+    --main-background:#90E0EF;
+    --section-background:#CAF0F8;
+}
+
+h1, h2{
+    color:var(--header-backgorund);
+    font-family: var(--heading-font);
+}
+
+p{
+    font-family: var(--paragraph-font);
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+
+
+.hero {
+    background: url('../images/hero_image.webp');
+    position:relative;
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.hero h1 p{
+    position:absolute;
+}
+
+
+article {
+    color: var(--paragraph-color);
+
+}
+article img{
+    float: right;
+}
