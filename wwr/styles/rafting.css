@@ -1,20 +1,24 @@
 :root {
-    --heading-color: #0077B6;
+    --heading-color: #CAF0F8;
     --heading-font: 'Teko', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
     --paragraph-color:#CAF0F8;
-    --header-backgorund:#0077B6;
+    --header-background:#0077B6;
     --main-background:#90E0EF;
     --section-background:#CAF0F8;
 }
 
+body{
+    background-color: #0077B6;
+}
 h1, h2{
-    color:var(--header-backgorund);
+    color:var(--heading-color);
     font-family: var(--heading-font);
 }
 
 p{
     font-family: var(--paragraph-font);
+    color:var(--paragraph-color);
 }
 
 footer a{
@@ -26,14 +30,21 @@ footer a{
 
 .hero {
     background: url('../images/hero_image.webp');
-    position:relative;
+    display:block;
+    width:100%;
+    height:400px;
+}
+
+.heroimg{
+    position:absolute;
     display:block;
     width:100%;
     height:auto;
 }
 
-.hero h1 p{
-    position:absolute;
+h1{
+    position: relative;
+    text-align: center;
 }
 
 
@@ -41,6 +52,82 @@ article {
     color: var(--paragraph-color);
 
 }
+article p{
+    position:relative;
+    
+}
 article img{
+    position:relative;
     float: right;
+    width: 300px;
+    height: 300px;
+}
+
+header{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    background:  var(--header-background);
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    flex: 1 1 auto;
+    color:#90E0EF;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header img {
+    width :100px;
+    height:100px;
+}
+
+.history{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+section img {
+    width:200px;
+    height:200px;
+    margin-left: 80px;
+}
+
+section{padding: 50px;}
+
+section h2{
+    text-align: center;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    padding:20px;
+    border-top: 1px solid black;
+}
+
+footer nav{
+    display: flex
+}
+
+
+footer img {
+    width:50px;
+    height:50px;
+}
+
+footer p{
+    text-align: center;
 }
