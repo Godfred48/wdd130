@@ -169,13 +169,13 @@ iframe {
 
 .emp{
     display:grid;
-    grid-template-columns: 4;
+    grid-template-columns: 2fr 2fr 2fr;
     justify-content:center;
     align-content:center;
     margin-right: 70px;
 }
 
-.emp h1{
+.emp h2{
     grid-column: 1/4;
 }
 
