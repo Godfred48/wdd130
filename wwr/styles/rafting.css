@@ -168,10 +168,15 @@ iframe {
 }
 
 .emp{
-    display:flex;
+    display:grid;
+    grid-template-columns: 4;
     justify-content:center;
     align-content:center;
     margin-right: 70px;
+}
+
+.emp h1{
+    grid-column: 1/4;
 }
 
 .emp p{
